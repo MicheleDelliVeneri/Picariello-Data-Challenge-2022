@@ -44,3 +44,14 @@ ul.posts li {
     color: #333
 }
 
+ul {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333; 
+}
+
+li {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333; 
+}
