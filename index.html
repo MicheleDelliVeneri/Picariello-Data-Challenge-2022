@@ -46,7 +46,7 @@
                     an industrial Data Science project as you would encounter
                     working as a data scientist for a company or an interdisciplinary
                     research group. The challenge is about predicting the <b>outcome</b>, 
-                    the <b>lenght in time</b> and the <b> settlement</b> for around 300,000 
+                    the <b>duration</b> in number of days and the <b> settlement</b> for around 300,000 
                     lowsuits produced by several tribunals of the "Giudice di Pace" scattered
                     around Italy. The groups will be provided at the start of the challenge 
                     with a subset of the raw data containing the target variables and, 
@@ -72,7 +72,7 @@
                             variables on a blind test set. You may decide to approach this three problems 
                             but your scores will be based on the following metrics:<br>
                             <b>F1-Score</b> for the outcome classification problem;<br>
-                            INSERIRE METRICA lenght in time;<br>
+                            INSERIRE METRICA duration;<br>
                             INSERIRE METRICA settlement.<br>
                         </li>       
                     </ul>
@@ -82,7 +82,34 @@
             <div>
                 <h2>Data Fields</h2>
                 <p>
-                    
+                    The following data fields are available in the data_exploration.csv file. 
+                    A brief description of all the fields is as follows:
+                    <ul>
+                        <li>ID: an unique identifier to each row of the dataset;</li>
+                        <li>Judge: the judge that handles the lawsuit;</li>
+                        <li>Giudge Identifier: an unique ID given to each Judge for each lowsuit;</li>
+                        <li>Date of the Identifier: the date in which the Giudge Identifier was assigned;</li>
+                        <li>Section: the section of the Judge;</li>
+                        <li>Date of the first Court Hearing: date of the firtst court hearing;</li>
+                        <li>Value: the monetary value of the lowsuit;</li>
+                        <li>Unified Contribution: is the cost to start the lowsuit;</li>
+                        <li>Last Communication from the Office: the date of the last communication from the judge office;</li>
+                        <li>Office Code: the unique identifier of the Judge Office;</li>
+                        <li>Year:the year in which the lowsuit took place;</li>
+                        <li>Copies Request: a boolean flag indicating if a request of the lowsuit document copies was forwarded to the Judge Office</li>
+                        <li>Actor: the actor of the lowsuit, i.e. the accusing part;</li>
+                        <li>Defendant: the principal defendant of the lowsuit;</li>
+                        <li>Number of Lowyers: the number of lowyers involved in the lowsuit;</li>
+                        <li>Number of Legal Parties: the number of legal parties involved in the lowsuit;</li>
+                        <li>Number of Legal Entities: the number of legal entities involved in the lowsuit;</li>
+                        <li>Number of Persons: the number of persons involved in the lowsuit;</li>
+                        <li>City of the Judge Office: the city in which the Judge Office is located;</li>
+                        <li>Date of the lowsuit: the date when the loswuit started;</li>
+                        <li>Duration XXXXX  </li>
+                        <li>Outcome: the outcome of the lowsuit (the first target variable);</li>
+                        <li>Duration: the time lenght of the lowsuit (the second target variable)</li>
+                        <li>Settlement: the final settlement of the lowsuit (the third target variable);</i>
+                    </ul>
                 </p>
             </div>
 
