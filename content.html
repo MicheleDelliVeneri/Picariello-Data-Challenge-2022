@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Eustema Data Challenge</title>
+        <!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="index.html">Home</a></li>
+	        	<li><a href="data/index.html">Data</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Eustema Data Challenge</h1>
+				<p>This is the official page of the Eustema Data Challenge organized by University of Naples 
+                    Federico II in collaboration with Eustema. If you are interested in the structure of the Challenge
+                    continue reading this page, if you want to go streight to the data, look  <a href="data/index.html">here</a></p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+
+        <div class="container">
+            <div class="blurb">
+                <h2>Registration to the Challenge</h2>
+                <p>The first step to compete in the challenge is 
+                    to register your group. 
+                    To do so send a mail to <a href="mailto:michele.delliveneri@na.infn.it">michele.delliveneri@na.infn.it</a>
+                    containing the following information:
+                    <ul>
+                        <li>Names of the partecipants</li>
+                        <li>Department, name and email of your supervisor</li>
+                    </ul>
+                </p>
+                <p>
+                    Please keep in mind that groups should contain a maximum number of 3 students which may
+                    or may not be from the same department.
+                </p>
+            </div>
+
+            <div>
+                <h2>Objective and Structure of the Challenge</h2>
+                <p>
+                    The objective of the challenge is to simulate
+                    an industrial Data Science project as you would encounter
+                    working as a data scientist for a company or an interdisciplinary
+                    research group. The challenge is about predicting the <b>outcome</b>, 
+                    the <b>duration</b> in number of days and the <b> settlement</b> for around 300,000 
+                    lowsuits produced by several tribunals of the "Giudice di Pace" scattered
+                    around Italy. The groups will be provided at the start of the challenge 
+                    with a subset of the raw data containing the target variables and, 
+                    later on in the challenge, you will be asked to predict those target variables 
+                    for a "blind" test set. 
+                    Given that the raw data are <i>"probably"</i>
+                    not suited to directly be used to make predictions due to all kinds of data problems, 
+                    and given that we are simulating a realistic data scientist workflow, the challenge 
+                    is splitted into two phases:
+                    <ul>
+                        <li> 
+                            Data Discovery and Exploration: you should analyze the data
+                            in order to search for correlations, missing data, outliers and so on. 
+                            At the deadline you will need to provide us a report about your findings
+                            and also the code that was used to analyze the data. Each group will be evaluated
+                            on the basis of the quality and completeness of their analysis, the clarity with wich 
+                            they findings are explaining and the quality of their code. The point is not only making
+                            a correct and complete analysis but also convincing us to trust your analysis. 
+                        </li>
+                        <li>
+                            Target Parameter Estimation: each group will be provided with a common 
+                            train and validation set and ask to make predictions on the three target
+                            variables on a blind test set. You may decide to approach this three problems 
+                            but your scores will be based on the following metrics:<br>
+                            <b>F1-Score</b> for the outcome classification problem;<br>
+                            INSERIRE METRICA duration;<br>
+                            INSERIRE METRICA settlement.<br>
+                        </li>       
+                    </ul>
+                </p>
+            </div>
+
+            <div>
+                <h2>Data Fields</h2>
+                <p>
+                    The following data fields are available in the data_exploration.csv file. 
+                    A brief description of all the fields is as follows:
+                    <ul>
+                        <li>ID: an unique identifier to each row of the dataset;</li>
+                        <li>Judge: the judge that handles the lawsuit;</li>
+                        <li>Giudge Identifier: an unique ID given to each Judge for each lowsuit;</li>
+                        <li>Date of the Identifier: the date in which the Giudge Identifier was assigned;</li>
+                        <li>Section: the section of the Judge;</li>
+                        <li>Date of the first Court Hearing: date of the firtst court hearing;</li>
+                        <li>Value: the monetary value of the lowsuit;</li>
+                        <li>Unified Contribution: is the cost to start the lowsuit;</li>
+                        <li>Last Communication from the Office: the date of the last communication from the judge office;</li>
+                        <li>Office Code: the unique identifier of the Judge Office;</li>
+                        <li>Year: the year in which the lowsuit took place;</li>
+                        <li>Copies Request: a boolean flag indicating if a request of the lowsuit document copies was forwarded to the Judge Office</li>
+                        <li>Actor: the actor of the lowsuit, i.e. the accusing part;</li>
+                        <li>Defendant: the principal defendant of the lowsuit;</li>
+                        <li>Number of Lowyers: the number of lowyers involved in the lowsuit;</li>
+                        <li>Number of Legal Parties: the number of legal parties involved in the lowsuit;</li>
+                        <li>Number of Legal Entities: the number of legal entities involved in the lowsuit;</li>
+                        <li>Number of Persons: the number of persons involved in the lowsuit;</li>
+                        <li>City of the Judge Office: the city in which the Judge Office is located;</li>
+                        <li>Date of the lowsuit: the date when the loswuit started;</li>
+                        <li>Duration XXXXX  </li>
+                        <li>Outcome: the outcome of the lowsuit (the first target variable);</li>
+                        <li>Duration: the duration of the lowsuit in number of days (the second target variable)</li>
+                        <li>Settlement: the final settlement of the lowsuit (the third target variable);</i>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+
+
+
+        
+
+		<footer>
+    		<ul>
+        		<li><a href="mailto:micheledelliveneri@gmail.com">email</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
