@@ -60,25 +60,185 @@
 							The Challenge
 						 </b>
 					</h2>
-					<p align="left" style="margin-left: 40px">
+					<p align="left" style="margin-left: 40px; font-size:20px">
 						The objective of the challenge is to simulate
                     	an industrial Data Science project as you would encounter
                     	working as a data scientist for a company or an interdisciplinary
                     	research group. The challenge is about predicting the <b>outcome</b>, 
                     	the <b>duration</b> in number of days and the <b> settlement</b> for around 300,000 
                     	lowsuits produced by several tribunals of the "Giudice di Pace" scattered
-                    	around Italy.<br> If you want to go streight to the data, look  <a href="data/index.html">here</a>
+                    	around Italy.<br> 
+						In order to register to the challenge, take a look at <a href="#2">Registration</a><br>
+						To know more about the data and the scoring, take a look at <a href="#3">Data</a><br>
+						To know how to submit your results, take a look at <a href="#4">Submission</a><br>
 					</p>
-					<br>
-					<p align="left" style="margin-left: 40px">
+					<p align="left" style="margin-left: 40px; font-size:20px">
 						At the beginning of the challenge, each group will be provided with training set containing all the input data 
 						fields and the values for the target variables and a blind test set for which you will have to make predictions.
+						Given that we are simulating an industrial data science project, we are not only interested about the performances
+						of your algorithms on the Test set, 
+						but also on the completeness and correctness of your <b class="alert">Exploratory Data Analysis</b> 
+						(EDA) and the <b class="alert">quality</b> of both your <b class="alert">code</b> and <b class="alert"> report</b>
+						explaining your strategy to solve the problems and the details of the algorithms and method used.
 					</p>
-
-
-
-
+					<p align="left" style="margin-left: 40px; font-size:20px">
+						In order to complete the challenge, you must provide us with:
+					</p>
+					<ul style="margin-left:100px; font-size:20px">
+						<li>
+							A file called prediction.csv containing for all the instances in the test set, your predictions for
+							the <b>outcome</b> (int), the <b>duration</b> (int) and the <b>settlement</b> (float32)
+						</li>
+						<li>
+							A file called <b>report.pdf</b>  outlining your EDA, the architectural choiches and an outline
+							of your approach to solve the three problems;
+						</li>
+						<li>
+							All the scripts used to solve the problems. The scripts can be written in the <b class="alert">Python</b> or
+							<b class="alert">R</b> languages and they must reproduce your results. We adivise to follow an object oriented 
+							parading and take a look at <a href="https://peps.python.org/pep-0008/">Python etiquette</a> and 
+							<a href="https://ourcodingclub.github.io/tutorials/etiquette/">R etiquette</a> to make sure that your
+							code is correctly commented and formatted.
+						</li>
+					</ul>
 				</section>
+
+			<section>
+				<h2 class="slide-title" style="position:absolut; top:0;">
+					<b class="alert">
+					   Registration
+					</b>
+			   </h2>
+			   <p align="left" style="margin-left: 40px; font-size:20px">
+				In order to register to the challenge, you need to form a group of 3 students and send an email to
+				<a href="mailto:micheledelliveneri@gmail.com">micheledelliveneri@gmail.com</a> containing the following
+				informations:
+				</p>
+				<div class="continer" align="left" style="margin-left:40px; font-size:20px">
+					<ul style="margin-left:20px; font-size:20px">
+						<li>Name of your group</li>
+						<li>Names of the Partecipants</li>
+						<li>Department, Name and email of your Supervisor</li>
+					</ul>
+				<p>
+					You will receive a reply containg the <b clas="alert">code</b> to join the Challenge Team on Microsoft Teams. 
+					The Team is where the challenge will be presented, where announcements will be made, where 
+					you will find the data (when the challenge begins) and where you will have submit your deliverables.
+				</p>
+				</div>
+				<h2 class="slide-title" style="position:absolut; top:0;">
+					<b class="alert">
+					   Timeline
+					</b>
+			   	</h2>
+			   	<div class="continer" align="left" style="margin-left:40px; font-size:20px">
+			   		<ol >
+					    <li>
+						   21/06 - 11.00: the Challenge is presented in Hybrid form both in the Caianello Conference Room in the Department of Physics
+						   and on Teams and <b class="alert">registrations</b> are opened
+					    </li>
+					    <li>
+						   03/07 - 24.00: registrations are closed, the full list of teams is made available on this page
+					    </li>
+					    <li>
+						   06/07 - 9.00: the Challenge begins, data is made available <a href="#3">here</a><br>
+					    </li>
+					    <li>
+						   16/09 - 24.00: the Challenge is closed, in order to have a valid submission you must load your deliverables
+						   before this deadline
+					    </li>
+					    <li>
+						   10/10 - 9.00: the set of finalist groups will be selected and each group will be asked to present their work live in 
+						   front of the judging commisions. The quality of your presentation will be evaluated and will count in your group total
+						   score
+					    </li>
+					    <li>
+						   <b>tbd</b>: the finalists present their work, the Challenge winner group is announced and awards are distributed
+					    </li>
+
+			   		</ol>
+				</div>
+				
+			
+
+
+
+			</section>
+
+			<section class="scrollable-slide">
+				<h2 class="slide-title" style="position:absolut; top:0;">
+					<b class="alert">
+					   The Data
+					</b>
+			   	</h2>
+			   	<div class="continer" align="left" style="margin-left:40px; font-size:20px">
+					The data will be provided on teams and will be consituted by 2 .csv files:
+					<ul>
+						<li><b class="alert">Training Set</b>: containing all the data fields and the 3 target variables</li>
+						<li><b class="alert">Blind Test Set</b>: containing all the data fields but no target variables</li>
+					</ul>
+				
+				</div>
+				<hr style="color:black">
+				<div class="continer" align="left" style="margin-left:40px; font-size:20px">
+					<p>
+						The following data fields are present:
+                    <ul  style="font-size:20px">
+                        <li>
+							<b class="alert">ID</b>: an unique identifier to each row of the dataset;</li>
+                        <li>
+							<b class="alert">Judge</b>: the judge that handles the lawsuit;</li>
+                        <li>
+							<b class="alert">Giudge Identifier</b>: an unique ID given to each Judge for each lowsuit;</li>
+                        <li>
+							<b class="alert">Date of the Identifier</b>: the date in which the Giudge Identifier was assigned;</li>
+                        <li>
+							<b class="alert">Section</b>: the section of the Judge;</li>
+                        <li>
+							<b class="alert">Date of the first Court Hearing</b>: date of the firtst court hearing;</li>
+                        <li>
+							<b class="alert">Value</b>: the monetary value of the lowsuit;</li>
+                        <li>
+							<b class="alert">Unified Contribution</b>: is the cost to start the lowsuit;</li>
+                        <li>
+							<b class="alert">Last Communication from the Office</b>: the date of the last communication from the judge office;</li>
+                        <li>
+							<b class="alert">Office Code</b>: the unique identifier of the Judge Office;</li>
+                        <li>
+							<b class="alert">Year</b>: the year in which the lowsuit took place;</li>
+                        <li>
+							<b class="alert">Copies Request</b>: a boolean flag indicating if a request of the lowsuit document copies was forwarded to the Judge Office</li>
+                        <li>
+							<b class="alert">Actor</b>: the actor of the lowsuit, i.e. the accusing part;</li>
+                        <li>
+							<b class="alert">Defendant</b>: the principal defendant of the lowsuit;</li>
+                        <li>
+							<b class="alert">Number of Lowyers</b>: the number of lowyers involved in the lowsuit;</li>
+                        <li>
+							<b class="alert">Number of Legal Parties</b>: the number of legal parties involved in the lowsuit;</li>
+                        <li>
+							<b class="alert">Number of Legal Entities</b>: the number of legal entities involved in the lowsuit;</li>
+                        <li>
+							<b class="alert">Number of Persons</b>: the number of persons involved in the lowsuit;</li>
+                        <li>
+							<b class="alert">City of the Judge Office</b>: the city in which the Judge Office is located;</li>
+                        <li>
+							<b class="alert">Date of the lowsuit</b>: the date when the loswuit started;</li>
+                        <li>
+							<b class="alert">Duration</b> XXXXX  </li>
+                        <li>
+							<b class="alert">Outcome</b>: the outcome of the lowsuit (the first target variable);</li>
+                        <li>
+							<b class="alert">Duration</b>: the duration of the lowsuit in number of days (the second target variable)</li>
+                        <li>
+							<b class="alert">Settlement</b>: the final settlement of the lowsuit (the third target variable);</i>
+                    </ul>
+					</p>
+				</div>
+
+
+
+			</section>
 						
 			
 			</div>
@@ -125,6 +285,11 @@
 			}
 			.col {
 			  flex: 1;
+			}
+
+			.scrollable-slide {
+   				height: 800px;
+    			overflow-y: auto;
 			}
 		</style>
 
