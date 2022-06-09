@@ -108,14 +108,14 @@
 				</section>
 
 				<section>
-					<h2 class="slide-title" style="position:absolut; top:0;">
+					<h3 class="slide-title" style="position:absolut; top:0;">
 						<b class="alert">
 							Prize
 						</b>
-					</h2>
+					</h3>
 					<ol style="font-size:20px" align="left">
 						<li>The winning group will receive One IPad Pro for each group member</li>
-						<li>The second group will receive one Amazon Giftcard for each group
+						<li>The second group will receive one 500€ Amazon Giftcard for each group
 							member</li>
 					</ol>
 					<p align="justify" style="margin-left: 40px; font-size:20px">
@@ -125,11 +125,11 @@
 					</p>
 
 
-					<h2 class="slide-title" style="position:absolut; top:0;">
+					<h3 class="slide-title" style="position:absolut; top:0;">
 						<b class="alert">
 							Registration
 						</b>
-					</h2>
+					</h3>
 					<p align="justify" style="margin-left: 40px; font-size:20px">
 						In order to register to the challenge, you need to form a group of 3 - 4
 						students (the composition of the groups cannot change during the
@@ -154,11 +154,11 @@
 							have submit your deliverables.
 						</p>
 					</div>
-					<h2 class="slide-title" style="position:absolut; top:0;">
+					<h3 class="slide-title" style="position:absolut; top:0;">
 						<b class="alert">
 							Timeline
 						</b>
-					</h2>
+					</h3>
 					<div class="continer" align="justify" style="margin-left:40px;
 						font-size:20px">
 						<ul>
@@ -210,13 +210,22 @@
 
 						<p>
 							The data will be provided on Microsoft Teams at the beginning of the
-							challenge and will be consituted by 2 .csv files:
+							challenge and will be consituted by 4 .csv files:
 						</p>
 						<ul>
-							<li><b class="alert">Training Set</b>: containing all the data fields and
-								the 3 target variables</li>
-							<li><b class="alert">Blind Test Set</b>: containing all the data fields
+							<li><b class="alert">Training Set for Outcome and and Duration prediction</b>:
+								containing all the data fields and
+								the 2 target variables</li>
+							<li><b class="alert">Blind Test Set for Outcome and Duration prediction</b>:
+								containing all the data fields
 								but no target variables</li>
+							<li><b class="alert">Training Set for Settlement prediction</b>:
+								containing all the data fields and
+								the target variable</li>
+							<li><b class="alert">Blind Test Set for Settlement prediction</b>:
+								containing all the data fields
+								but no target variable</li>
+
 						</ul>
 					</div>
 
@@ -227,50 +236,57 @@
 						</p>
 						<ul style="font-size:18px">
 							<li>
-								<b class="alert">ID</b>: an unique identifier to each row of the dataset</li>
+								<b class="alert">ID</b>: an unique identifier to each row of the dataset
+							</li>
+							<li>
+								<b class="alert">Case identifier</b>: an unique identifier for the case
+							</li>
 							<li>
 								<b class="alert">Judge Identifier</b>: an unique ID given to each Judge
 							</li>
 							<li>
 								<b class="alert">Date</b>: the date in which the
-								Judge Identifier was assigned</li>
+								Judge Identifier was assigned, and thus the case begun
+							</li>
 							<li>
-								<b class="alert">Section</b>: the judge's tribunal section</li>
+								<b class="alert">Section</b>: the judge's tribunal section
+							</li>
 							<li>
-								<b class="alert">Date of the first Court Hearing</b>: date of the first
-								court hearing</li>
+								<b class="alert">Value</b>: the monetary value of the lawsuit
+							</li>
 							<li>
-								<b class="alert">Value</b>: the monetary value of the lawsuit</li>
+								<b class="alert"> Tax Related</b>: indicates if the case is tax related
+							</li>
 							<li>
-								<b class="alert">Unified Contribution</b>: is the cost to start the
-								lawsuit;</li>
+								<b class="alert">Unified Contribution</b>: is the monetary cost to start
+								the
+								lawsuit
+							</li>
 							<li>
-								<b class="alert">Last Communication from the Office</b>: the date of the
-								last communication from the
-								judge's office</li>
+								<b class="alert">Primary Actor</b>: is the primary actor of the lawsuit,
+								i.e. the accusing
+								part
+							</li>
 							<li>
-								<b class="alert">Office Code</b>: the unique identifier of the judge's
-								office</li>
+								<b class="alert">Seconday Actor</b>: is the seconday actor of the
+								lawsuit, i.e. the accusing
+								part
+							</li>
 							<li>
-								<b class="alert">Year</b>: the year in which the lawsuit took place</li>
+								<b class="alert">Primary Defendant</b>: is the primary defendant of the
+								lawsuit
+							</li>
 							<li>
-								<b class="alert">Copies Request</b>: a boolean flag indicating if a
-								request for the lawsuit
-								documents copies was forwarded to the judge’s office</li>
-							<li>
-								<b class="alert">Actor</b>: the actor of the lawsuit, i.e. the accusing
-								part</li>
-							<li>
-								<b class="alert">Defendant</b>: the principal defendant of the lawsuit</li>
+								<b class="alert">Primary Defendant</b>: is the primary defendant of the
+								lawsuit
+							</li>
 							<li>
 								<b class="alert">Number of Lawyers</b>: the number of lawyers involved
 								in the lawsuit</li>
 							<li>
 								<b class="alert">Number of Legal Parties</b>: the number of legal
-								parties involved in the lawsuit</li>
-							<li>
-								<b class="alert">Number of Legal Entities</b>: the number of legal
-								entities involved in the lawsuit</li>
+								parties involved in the lawsuit
+							</li>
 							<li>
 								<b class="alert">Number of Persons</b>: the number of persons involved
 								in the lawsuit</li>
@@ -278,11 +294,6 @@
 								<b class="alert">City of the judge’s office</b>: the city in which the
 								judge's office is located
 							</li>
-							<li>
-								<b class="alert">Date of the lawsuit</b>: the date when the lawsuit
-								started</li>
-							<li>
-								<b class="alert">Duration</b> XXXXX </li>
 
 							<hr>
 							<li>
