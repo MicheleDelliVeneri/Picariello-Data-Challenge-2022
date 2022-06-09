@@ -104,10 +104,6 @@
 						explaining your strategy to solve the problems and the details of the
 						algorithms and method used.
 					</p>
-
-				</section>
-
-				<section>
 					<h3 class="slide-title" style="position:absolut; top:0;">
 						<b class="alert">
 							Prize
@@ -124,6 +120,9 @@
 						(hiring)
 					</p>
 
+				</section>
+
+				<section>
 
 					<h3 class="slide-title" style="position:absolut; top:0;">
 						<b class="alert">
@@ -332,14 +331,19 @@
 						16th of September at midnight:
 						<ol style="margin-left:100px; font-size:20px">
 							<li>
-								A file called prediction.csv containing, for all the instances in the
+								A file called prediction_outcome_duration.csv containing, for all
+								instances in the
 								Test set, your predictions for
-								the <b>outcome</b> (int), the <b>duration</b> (int) and the <b>settlement</b>
-								(float32). The file must
-								have a header with 4 columns named respectively ID, Outcome, Duration,
-								Settlement.
+								the <b>outcome</b> (int) and the <b>duration</b> (int). The file must
+								have a header with 3 columns named respectively ID, Outcome and
+								Duration.
+								A file called prediction_settlement.csv containing, for all instances in
+								the Test set,
+								your predictions for the <b>settlement</b> (float32). The file must have
+								a header
+								with 2 comlumns named respectively ID and Settlement
 								You must provide the predictions for all the Test instances, otherwise
-								your score will be invalidated
+								your score will be invalidated.
 
 							</li>
 							<li>
